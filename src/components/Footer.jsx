@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const LOGO = "/assets/logo/logo-light.png";
+const LOGO = import.meta.env.BASE_URL + "assets/logo/logo-light.png";
 
 /* Site footer — ink (scheme-4) band with the white wordmark, link row, a
  * hairline divider, and a legal line. */

@@ -5,7 +5,7 @@ import { Card } from "../components/Card.jsx";
 import { Eyebrow } from "../components/Eyebrow.jsx";
 import { Icon } from "../components/Icon.jsx";
 
-const IMG = "/assets/images/";
+const IMG = import.meta.env.BASE_URL + "assets/images/";
 const SECTION = { paddingInline: "5%", paddingBlock: "clamp(56px,8vw,112px)" };
 const WRAP = { maxWidth: 1280, margin: "0 auto" };
 

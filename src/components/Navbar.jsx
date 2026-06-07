@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
-const LOGO = "/assets/logo/logo-light.png";
+const LOGO = import.meta.env.BASE_URL + "assets/logo/logo-light.png";
 
 /* Site navbar — ink (scheme-4) bar with the white WSTK wordmark, primary
  * links, and a language selector. Routed via react-router. */
