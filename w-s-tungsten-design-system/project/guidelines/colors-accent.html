@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Web Orange — Accent" subtitle="Ore-gold accent; #F2A900 is base" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--color-white); }
+  .ramp { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0; max-width: 660px; }
+  .sw { height: 84px; position: relative; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; font-family: var(--font-body); }
+  .sw span { font-size: 11px; line-height: 1.3; }
+  .hex { font-weight: 600; }
+  .name { opacity: 0.75; }
+  .star { position: absolute; top: 6px; left: 8px; font-size: 11px; }
+</style>
+</head>
+<body>
+  <div class="ramp">
+    <div class="sw" style="background:var(--color-web-orange-lightest); color:#483200;"><span class="hex">#FDF6E5</span><span class="name">lightest</span></div>
+    <div class="sw" style="background:var(--color-web-orange-lighter); color:#483200;"><span class="hex">#FCEDCC</span><span class="name">lighter</span></div>
+    <div class="sw" style="background:var(--color-web-orange-light); color:#483200;"><span class="hex">#F5C24C</span><span class="name">light</span></div>
+    <div class="sw" style="background:var(--color-web-orange); color:#483200;"><span class="star">●</span><span class="hex">#F2A900</span><span class="name">base</span></div>
+    <div class="sw" style="background:var(--color-web-orange-dark); color:#fff;"><span class="hex">#C18700</span><span class="name">dark</span></div>
+    <div class="sw" style="background:var(--color-web-orange-darker); color:#fff;"><span class="hex">#604300</span><span class="name">darker</span></div>
+    <div class="sw" style="background:var(--color-web-orange-darkest); color:#fff;"><span class="hex">#483200</span><span class="name">darkest</span></div>
+  </div>
+</body>
+</html>

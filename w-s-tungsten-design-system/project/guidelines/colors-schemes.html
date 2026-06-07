@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x190" name="Section schemes" subtitle="Four section schemes that drive page rhythm" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--color-white); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; max-width: 660px; }
+  .cell { height: 140px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--color-scheme-border); }
+  .cell .lbl { font-family: var(--font-body); font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+  .cell h4 { font-family: var(--font-heading); font-weight: 500; font-size: 20px; }
+  .chip { display: inline-block; width: 18px; height: 18px; background: var(--color-scheme-accent); }
+  .meta { font-family: var(--font-body); font-size: 11px; opacity: 0.7; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell scheme-1"><span class="lbl">Scheme 1</span><h4>Deep teal</h4><div><span class="chip"></span></div><span class="meta">#041F2B</span></div>
+    <div class="cell scheme-2"><span class="lbl">Scheme 2</span><h4>Pampas</h4><div><span class="chip"></span></div><span class="meta">#F6F5F0</span></div>
+    <div class="cell scheme-3"><span class="lbl">Scheme 3</span><h4>Teal tint</h4><div><span class="chip"></span></div><span class="meta">#E6EDF0</span></div>
+    <div class="cell scheme-4"><span class="lbl">Scheme 4</span><h4>Ink</h4><div><span class="chip"></span></div><span class="meta">#050A08</span></div>
+  </div>
+</body>
+</html>

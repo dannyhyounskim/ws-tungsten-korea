@@ -1,0 +1,22 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Elevation — hard shadow" subtitle="Buttons sit on a 3px solid shadow & press down" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 28px 24px; background: var(--color-white); font-family: var(--font-body); display: flex; gap: 40px; align-items: center; }
+  .demo { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .btn { font-family: var(--font-body); font-weight: 500; font-size: 15px; padding: 11px 24px; border: 1.5px solid var(--color-deep-sea-green-dark); background: var(--color-deep-sea-green); color: #fff; }
+  .rest { box-shadow: var(--shadow-btn); }
+  .press { transform: translateY(3px); box-shadow: none; }
+  .cap { font-size: 11px; color: var(--color-neutral); }
+  .note { font-family: var(--font-heading); font-weight: 500; font-size: 20px; color: var(--color-neutral-darkest); max-width: 280px; line-height: 1.3; }
+</style>
+</head>
+<body>
+  <div class="demo"><button class="btn rest">Product</button><span class="cap">rest · 0 3px 0 dark</span></div>
+  <div class="demo"><button class="btn press">Product</button><span class="cap">hover/press · y+3, no shadow</span></div>
+  <div class="note">No blur. Elevation is a solid offset that collapses as the control depresses.</div>
+</body>
+</html>

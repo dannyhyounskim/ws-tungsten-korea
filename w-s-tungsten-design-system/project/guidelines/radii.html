@@ -1,0 +1,20 @@
+<!-- @dsCard group="Spacing" viewport="700x170" name="Radii — square" subtitle="All corners are 0; sharp industrial edges" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--color-white); font-family: var(--font-body); display: flex; gap: 28px; align-items: center; }
+  .item { text-align: center; }
+  .box { width: 84px; height: 84px; background: var(--color-deep-sea-green-lightest); border: 1.5px solid var(--color-deep-sea-green); }
+  .lbl { font-size: 11px; color: var(--color-neutral-dark); margin-top: 10px; }
+  .note { font-family: var(--font-heading); font-weight: 500; font-size: 22px; color: var(--color-neutral-darkest); max-width: 260px; line-height: 1.25; }
+</style>
+</head>
+<body>
+  <div class="item"><div class="box"></div><div class="lbl">button · card · input</div></div>
+  <div class="item"><div class="box"></div><div class="lbl">badge · image</div></div>
+  <div class="note">Every radius token resolves to <b>0px</b> — corners stay square.</div>
+</body>
+</html>

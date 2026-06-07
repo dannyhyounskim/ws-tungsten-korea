@@ -1,0 +1,69 @@
+/* W.S. Tungsten Korea — Spacing, radii, containers, elevation
+ * The brand is sharp and industrial: radii are 0 across the board (square
+ * corners). Elevation is expressed as HARD offset shadows (no blur) — most
+ * visibly on buttons, which sit on a 3px solid shadow and "press down" on
+ * hover. Section rhythm is generous: 64 / 96 / 112px vertical padding. */
+
+:root {
+  /* ---- Spacing scale (4px base) ---- */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4 */
+  --space-2: 0.5rem; /* 8 */
+  --space-3: 0.75rem; /* 12 */
+  --space-4: 1rem; /* 16 */
+  --space-5: 1.25rem; /* 20 */
+  --space-6: 1.5rem; /* 24 */
+  --space-8: 2rem; /* 32 */
+  --space-10: 2.5rem; /* 40 */
+  --space-12: 3rem; /* 48 */
+  --space-16: 4rem; /* 64 */
+  --space-18: 4.5rem; /* 72 */
+  --space-20: 5rem; /* 80 */
+  --space-24: 6rem; /* 96 */
+  --space-28: 7rem; /* 112 */
+  --space-30: 7.5rem; /* 120 */
+
+  /* ---- Section padding (responsive vertical rhythm) ---- */
+  --section-py: 4rem; /* mobile */
+  --section-py-md: 6rem;
+  --section-py-lg: 7rem;
+  --section-px: 5%; /* horizontal gutter */
+
+  /* ---- Radii : sharp / square ---- */
+  --radius-button: 0;
+  --radius-card: 0;
+  --radius-input: 0;
+  --radius-checkbox: 0;
+  --radius-badge: 0;
+  --radius-image: 0;
+  --radius-pill: 0;
+
+  /* ---- Borders ---- */
+  --border-width: 1px;
+  --border-width-strong: 1.5px;
+  --divider-width: 1px;
+
+  /* ---- Hard offset "shadows" (the press-down system) ---- */
+  --shadow-btn: 0 3px 0 0 var(--color-deep-sea-green-dark);
+  --shadow-btn-light: 0 3px 0 0 var(--color-neutral-lighter);
+  --shadow-btn-ghost: 0 3px 0 0 var(--color-ink-15);
+  --shadow-btn-ghost-dark: 0 3px 0 0 var(--color-white-20);
+  /* Subtle real elevation, used sparingly (e.g. floating menus) */
+  --shadow-pop: 0 8px 28px -8px rgba(5, 10, 8, 0.22);
+  /* Timeline node ring */
+  --ring-node: 0 0 0 8px var(--color-scheme-background);
+
+  /* ---- Containers ---- */
+  --container-xs: 25rem;
+  --container-sm: 30rem;
+  --container-md: 35rem;
+  --container-lg: 48rem;
+  --container-xl: 64rem;
+  --container-xxl: 80rem; /* page max-width */
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --dur-fast: 150ms; /* @kind other */
+  --dur-base: 200ms; /* @kind other */
+  --dur-slow: 300ms; /* @kind other */
+}

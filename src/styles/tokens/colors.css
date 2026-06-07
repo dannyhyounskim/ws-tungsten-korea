@@ -1,0 +1,97 @@
+/* W.S. Tungsten Korea — Color tokens
+ * A light, industrial palette: cool neutral greys, a deep-sea-green primary
+ * (the brand's signature dark teal), a warm web-orange accent (the gold
+ * flecks in tungsten ore), a de-york mint for positive states, and pampas
+ * as a warm off-white surface. Ramps go light(est) -> dark(est). */
+
+:root {
+  /* ---------- Neutral ---------- */
+  --color-white: #ffffff;
+  --color-neutral-lightest: #f2f2f2;
+  --color-neutral-lighter: #d9dad9;
+  --color-neutral-light: #b4b5b4;
+  --color-neutral: #828483;
+  --color-neutral-dark: #505352;
+  --color-neutral-darker: #1e2220;
+  --color-neutral-darkest: #050a08; /* near-black ink */
+
+  /* ---------- Deep Sea Green (primary / brand teal) ---------- */
+  --color-deep-sea-green-lightest: #e6edf0;
+  --color-deep-sea-green-lighter: #cedbe1;
+  --color-deep-sea-green-light: #548398;
+  --color-deep-sea-green: #0b4f6c; /* primary */
+  --color-deep-sea-green-dark: #083f56;
+  --color-deep-sea-green-darker: #041f2b; /* dark surface */
+  --color-deep-sea-green-darkest: #031720;
+
+  /* ---------- Web Orange (accent / ore-gold) ---------- */
+  --color-web-orange-lightest: #fdf6e5;
+  --color-web-orange-lighter: #fcedcc;
+  --color-web-orange-light: #f5c24c;
+  --color-web-orange: #f2a900; /* accent */
+  --color-web-orange-dark: #c18700;
+  --color-web-orange-darker: #604300;
+  --color-web-orange-darkest: #483200;
+
+  /* ---------- De York (mint / success) ---------- */
+  --color-de-york-lightest: #f0f9f5;
+  --color-de-york-lighter: #e1f3ec;
+  --color-de-york-light: #98d6bd;
+  --color-de-york: #6cc5a1;
+  --color-de-york-dark: #569d80;
+  --color-de-york-darker: #2b4e40;
+  --color-de-york-darkest: #203b30;
+
+  /* ---------- Pampas (warm off-white surface) ---------- */
+  --color-pampas-lightest: #fefefd;
+  --color-pampas-lighter: #fdfdfc;
+  --color-pampas-light: #f8f8f4;
+  --color-pampas: #f6f5f0;
+  --color-pampas-dark: #c4c4c0;
+  --color-pampas-darker: #626260;
+  --color-pampas-darkest: #494948;
+
+  /* ---------- Alpha ramps (overlays, borders, scrims) ---------- */
+  --color-white-5: rgba(255, 255, 255, 0.05);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-white-15: rgba(255, 255, 255, 0.15);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-60: rgba(255, 255, 255, 0.6);
+
+  --color-ink-5: rgba(5, 10, 8, 0.05);
+  --color-ink-10: rgba(5, 10, 8, 0.1);
+  --color-ink-15: rgba(5, 10, 8, 0.15);
+  --color-ink-20: rgba(5, 10, 8, 0.2);
+  --color-ink-30: rgba(5, 10, 8, 0.3);
+  --color-ink-40: rgba(5, 10, 8, 0.4);
+  --color-ink-50: rgba(5, 10, 8, 0.5);
+  --color-ink-60: rgba(5, 10, 8, 0.6);
+
+  /* ---------- Semantic aliases (default = light scheme) ---------- */
+  --primary: var(--color-deep-sea-green);
+  --primary-hover: var(--color-deep-sea-green-dark);
+  --accent: var(--color-web-orange);
+  --success: var(--color-de-york);
+
+  --bg-page: var(--color-white);
+  --surface-card: var(--color-white);
+  --surface-muted: var(--color-pampas);
+  --surface-inverse: var(--color-deep-sea-green-darker);
+
+  --text-body: var(--color-neutral-darkest);
+  --text-muted: var(--color-neutral-dark);
+  --text-on-dark: var(--color-white);
+  --border-default: var(--color-ink-15);
+  --border-strong: var(--color-ink-20);
+
+  /* Scheme-driven tokens — overridden per .scheme-* (see schemes.css).
+     Components reference these so they invert correctly on dark sections. */
+  --color-scheme-background: var(--color-white);
+  --color-scheme-foreground: var(--color-white);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-ink-15);
+  --color-scheme-accent: var(--color-deep-sea-green);
+}

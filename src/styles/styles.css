@@ -1,0 +1,68 @@
+/* W.S. Tungsten Korea — global stylesheet entry point.
+ * Tokens are split one-file-per-concern and pulled in here; app-level globals
+ * (icon font tuning, link defaults, responsive grid collapses) follow. */
+
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/schemes.css";
+@import "./tokens/base.css";
+
+/* ---- App globals ---- */
+body {
+  background: var(--color-white);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+  user-select: none;
+}
+
+/* Underlined hover for inline content links (contact methods, etc.) */
+a.wstk-link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: transparent;
+  transition: text-decoration-color var(--dur-base) var(--ease-standard);
+}
+a.wstk-link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* ---- Responsive grid collapses ---- */
+@media (max-width: 900px) {
+  .hero-grid,
+  .two-col,
+  .stats-grid,
+  .faq-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .stat-cards {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .timeline {
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+  .methods,
+  .detail-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .biz-row {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .timeline,
+  .methods,
+  .detail-grid,
+  .stat-cards {
+    grid-template-columns: 1fr !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+}

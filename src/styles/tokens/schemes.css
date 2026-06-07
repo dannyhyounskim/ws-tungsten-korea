@@ -1,0 +1,51 @@
+/* W.S. Tungsten Korea — Color schemes
+ * Sections opt into a scheme by class. Each scheme rebinds the
+ * --color-scheme-* tokens so every child (cards, borders, buttons, icons)
+ * inherits correct contrast automatically. Alternate dark/light schemes
+ * down the page to build visual rhythm.
+ *
+ *   .scheme-1  Deep teal      #041F2B  (white text)   — heroes, stat blocks
+ *   .scheme-2  Pampas         #F6F5F0  (ink text)      — warm content sections
+ *   .scheme-3  Teal tint      #E6EDF0  (ink text)      — process / FAQ sections
+ *   .scheme-4  Near-black ink #050A08  (white text)    — navbar, footer
+ */
+
+.scheme-1 {
+  --color-scheme-background: var(--color-deep-sea-green-darker);
+  --color-scheme-foreground: var(--color-deep-sea-green-darker);
+  --color-scheme-text: var(--color-white);
+  --color-scheme-border: var(--color-white-20);
+  --color-scheme-accent: var(--color-web-orange);
+  background-color: var(--color-scheme-background);
+  color: var(--color-scheme-text);
+}
+
+.scheme-2 {
+  --color-scheme-background: var(--color-pampas);
+  --color-scheme-foreground: var(--color-pampas);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-ink-15);
+  --color-scheme-accent: var(--color-deep-sea-green);
+  background-color: var(--color-scheme-background);
+  color: var(--color-scheme-text);
+}
+
+.scheme-3 {
+  --color-scheme-background: var(--color-deep-sea-green-lightest);
+  --color-scheme-foreground: var(--color-deep-sea-green-lightest);
+  --color-scheme-text: var(--color-neutral-darkest);
+  --color-scheme-border: var(--color-ink-15);
+  --color-scheme-accent: var(--color-deep-sea-green);
+  background-color: var(--color-scheme-background);
+  color: var(--color-scheme-text);
+}
+
+.scheme-4 {
+  --color-scheme-background: var(--color-neutral-darkest);
+  --color-scheme-foreground: var(--color-neutral-darkest);
+  --color-scheme-text: var(--color-white);
+  --color-scheme-border: var(--color-white-20);
+  --color-scheme-accent: var(--color-web-orange);
+  background-color: var(--color-scheme-background);
+  color: var(--color-scheme-text);
+}

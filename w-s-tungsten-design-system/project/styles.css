@@ -1,0 +1,10 @@
+/* W.S. Tungsten Korea — Design System
+ * Single global entry point. Consumers link THIS file only.
+ * Keep this as @import lines only — no rules here. */
+
+@import "./tokens/fonts.css";
+@import "./tokens/colors.css";
+@import "./tokens/typography.css";
+@import "./tokens/spacing.css";
+@import "./tokens/schemes.css";
+@import "./tokens/base.css";
